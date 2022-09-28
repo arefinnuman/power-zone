@@ -10,17 +10,17 @@ const Exercises = () => {
     }, []);
     return (
         <div>
-            <h1>Select your exercise</h1>
-            <h3>Exercises: {exercises.length}</h3>
-            <div className="row row-cols-1 row-cols-md-2 g-4">
-            {
-                exercises.map(exercise => <Exercise 
-                    exercise={exercise}
-                    ></Exercise>)
-            }
+            <div>
+                <h1 className='mt-4'>Select your exercise</h1>
+                <div className="mt-2 row row-cols-1 row-cols-md-2 g-4 mx-md-5 shadow-lg mb-5 bg-body rounded">
+                {
+                    exercises.map(exercise => <Exercise 
+                        exercise={exercise}
+                        key={exercise.id}
+                        ></Exercise>)
+                }
+                </div>
             </div>
-
-           
         </div>
     );
 };
