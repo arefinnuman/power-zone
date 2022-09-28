@@ -3,8 +3,10 @@ import img from "../Utilities/Images/image1.jpg";
 
 const Details = ({ cart, breakTime, handleInput }) => {
     let totalExercises = 0;
+    let quantity = 0;
     for (const item of cart) {
-        totalExercises = totalExercises + item.time;
+        totalExercises = totalExercises + (item.time * item.quantity);
+        quantity = quantity + item.quantity;
     }
     let totalBreakTime = breakTime;
     

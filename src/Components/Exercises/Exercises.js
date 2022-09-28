@@ -29,10 +29,20 @@ const Exercises = () => {
     setCart(savedCart);
   }, [exercises]);
 
-  const handleAddToCart = (exercise) => {
-    const newCart = [...cart, exercise];
+  const handleAddToCart = (selectedExercise) => {
+    let newCart = [];
+    const exists = cart.find((exercise) => exercise.id === selectedExercise.id);
+    if(!exists){
+      selectedExercise.quantity = 1;
+      newCart = [...cart, selectedExercise];
+    }
+    else{
+      const rest = cart.filter((exercise) => exercise.id !== selectedExercise.id);
+      exists.quantity = exists.quantity + 1;
+      newCart = [...rest, exists];
+    }
     setCart(newCart);
-    addToDb(exercise.id);
+    addToDb(selectedExercise.id);
   };
   const handleInput = (e) => {
     setBreakTime(e.target.value);
