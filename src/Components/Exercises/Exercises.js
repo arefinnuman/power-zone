@@ -5,6 +5,7 @@ import Exercise from '../Exercise/Exercise';
 const Exercises = () => {
     const [exercises, setExercises] = useState([]);
     const [cart, setCart] = useState([]);
+    const [breakTime, setBreakTime] = useState(0);
     useEffect(() => {
         fetch('fakeData.json')
             .then(res => res.json())
@@ -14,9 +15,12 @@ const Exercises = () => {
     const handleAddToCart = (exercise) => {
         const newCart = [...cart, exercise];
         setCart(newCart);
-
     }
-
+    const handleInput = e => {
+        const newBreakTime = e.target.value;
+        console.log(newBreakTime);
+        setBreakTime(newBreakTime);
+    }
 
     return (
         <div className='row'>
@@ -39,7 +43,11 @@ const Exercises = () => {
             </div>
 
             <div className='col-6 col-md-3'>
-                <Details cart={cart}></Details>
+                <Details 
+                cart={cart}
+                breakTime = {breakTime}
+                handleInput={handleInput}
+                ></Details>
             </div>
         </div>
 

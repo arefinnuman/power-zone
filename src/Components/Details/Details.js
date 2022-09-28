@@ -1,20 +1,20 @@
 import React from "react";
 
-const Details = ({ cart }) => {
+const Details = ({ cart, breakTime, handleInput }) => {
     let totalExercises = 0;
     for (const item of cart) {
         totalExercises = totalExercises + item.time;
     }
-    const button = (button) => {
-        const buttonValue = button.target.value;
-        console.log(buttonValue);
-    };
+    let totalBreakTime = breakTime;
+    
 
+    
+    
     return (
         <div>
             <div className="mt-5 p-2">
                 <div className="">
-                    <div className="img-fluid img-thumbnail w-25 h-25"></div>
+                    <div className=""></div>
                     <div>
                         <h5>Arefin Numan</h5>
                         <p>Dhaka,Bangladesh</p>
@@ -24,40 +24,41 @@ const Details = ({ cart }) => {
                     <h5>Add a Break</h5>
                     <div className="">
                         <button
-                            onClick={button}
+                        onClick={handleInput}
                             className="m-2 btn btn-light btn btn-outline-primary rounded"
                             value={10}
                         >
-                            10
+                            10s
                         </button>
                         <button
-                            onClick={button}
+                            
+                            onClick={handleInput}
                             className="m-2 btn btn-light btn btn-outline-primary rounded"
-                            value={10}>
+                            value={20}>
                             20s
                         </button>
                         <button 
-                            onClick={button}
+                           onClick={handleInput}
                             className="m-2 btn btn-light btn btn-outline-primary rounded"
-                            value={10}>
+                            value={30}>
                             30s
                         </button>
                         <button 
-            onClick={button}
+                            onClick={handleInput}
                             className="m-2 btn btn-light btn btn-outline-primary rounded"
-                            value={10}>
+                            value={40}>
                             40s
                         </button>
                         <button 
-                            onClick={button}
+                            onClick={handleInput}
                             className="m-2 btn btn-light btn btn-outline-primary rounded"
-                            value={10}>
+                            value={50}>
                             50s
                         </button>
                         <button 
-                            onClick={button}
+                            onClick={handleInput}
                             className="m-2 btn btn-light btn btn-outline-primary rounded"
-                            value={10}>
+                            value={60}>
                             60s
                         </button>
                     </div>
@@ -74,6 +75,7 @@ const Details = ({ cart }) => {
                     <div className="shadow p-2 mb-5 bg-body rounded">
                         <p>
                             <b>Break Time: </b>
+                            {totalBreakTime}s  
                         </p>
                     </div>
                 </div>
