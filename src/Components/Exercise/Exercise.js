@@ -4,7 +4,7 @@ const Exercise = ({ exercise, handleAddToCart }) => {
     const { name, img, about, age, time, id } = exercise;
     return (
         <div className="col">
-            <div className="card">
+            <div className="card shadow-lg mb-5 bg-body rounded">
                 <img src={img} className="card-img-top" alt="" />
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>

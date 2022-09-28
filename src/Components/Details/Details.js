@@ -1,4 +1,5 @@
 import React from "react";
+import img from "../Utilities/Images/image1.jpg";
 
 const Details = ({ cart, breakTime, handleInput }) => {
     let totalExercises = 0;
@@ -7,15 +8,12 @@ const Details = ({ cart, breakTime, handleInput }) => {
     }
     let totalBreakTime = breakTime;
     
-
-    
-    
     return (
         <div>
-            <div className="mt-5 p-2">
-                <div className="">
-                    <div className=""></div>
-                    <div>
+            <div className="mt-5 p-2 ">
+                <div className="mb-3 d-flex justify-concent-center align-items-center">
+                        <img className= "rounded-5 " src={img} alt="" />
+                    <div className="ms-2">
                         <h5>Arefin Numan</h5>
                         <p>Dhaka,Bangladesh</p>
                     </div>
