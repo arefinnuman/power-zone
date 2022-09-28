@@ -67,7 +67,7 @@ const Details = ({ cart, breakTime, handleInput }) => {
                     <div className="shadow p-2 mb-5 bg-body rounded">
                         <p>
                             <b>Exercise Time: </b>
-                            {totalExercises}
+                            {totalExercises}s
                         </p>
                     </div>
                     <div className="shadow p-2 mb-5 bg-body rounded">

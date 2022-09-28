@@ -16,11 +16,18 @@ const Exercises = () => {
 
   useEffect(() => {
     const storedCart = getStoredCart();
-    for(const id in storedCart){
-      const addedExercise = exercises.find(exercise => exercise.id === id);
-      console.log(addedExercise);
+    const savedCart = [];
+    for (const id in storedCart) {
+      const addedExercise = exercises.find((exercise) => exercise.id === id);
+      if (addedExercise) {
+        const quantity = storedCart[id];
+        addedExercise.quantity = quantity;
+        console.log(addedExercise);
+        savedCart.push(addedExercise);
+      }
     }
-  }, []);
+    setCart(savedCart);
+  }, [exercises]);
 
   const handleAddToCart = (exercise) => {
     const newCart = [...cart, exercise];
