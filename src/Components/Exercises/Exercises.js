@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Details from "../Details/Details";
 import Exercise from "../Exercise/Exercise";
+import { addToDb, getStoredCart } from "../Utilities/FakeDb/fakedb";
 import logo from "../Utilities/Images/logo.png";
 
 const Exercises = () => {
@@ -13,9 +14,18 @@ const Exercises = () => {
       .then((data) => setExercises(data));
   }, []);
 
+  useEffect(() => {
+    const storedCart = getStoredCart();
+    for(const id in storedCart){
+      const addedExercise = exercises.find(exercise => exercise.id === id);
+      console.log(addedExercise);
+    }
+  }, []);
+
   const handleAddToCart = (exercise) => {
     const newCart = [...cart, exercise];
     setCart(newCart);
+    addToDb(exercise.id);
   };
   const handleInput = (e) => {
     setBreakTime(e.target.value);
