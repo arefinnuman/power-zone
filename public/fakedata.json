@@ -1,8 +1,8 @@
 [
   {
     "id": "63345d3a5714bc834b509916",
-    "name": "Oliver Rowe",
-    "about": "Excepteur tempor laboris anim non consequat occaecat dolore nulla sit veniam excepteur nostrud aute irure. Sit laboris non consequat esse ad cupidatat fugiat eu quis. Id ad est dolor ipsum labore aliqua tempor commodo quis Lorem anim. Magna duis amet enim ad. Mollit commodo ad velit id aliqua anim sint. Et incididunt anim amet tempor ex consequat voluptate do in in nostrud ad dolor. Proident veniam consequat cupidatat minim veniam minim deserunt.\r\n",
+    "name": "Deadlift",
+    "about": "Arguably the king of all exercises, the deadlift hits every major muscle group hard, and is perhaps the greatest test of strength there is. Because of all the muscles involved, it releases a huge amount of testosterone (a muscle-building hormone) into the bloodstream. For this reason, the deadlift is a great cornerstone for any fitness plan.\r\n",
     "age": "19-36",
     "time": 27,
     "quantity": 0,
@@ -10,8 +10,8 @@
   },
   {
     "id": "63345d3a58e7e4367d5701c0",
-    "name": "Serena Greene",
-    "about": "Proident quis labore in ipsum pariatur enim pariatur. Labore amet deserunt fugiat occaecat proident culpa sunt enim ex exercitation nulla et eiusmod. Ea mollit elit adipisicing esse Lorem sit nostrud reprehenderit laboris eu consequat. Irure ipsum occaecat quis do dolore non. Enim laboris incididunt ipsum pariatur reprehenderit. Aliquip quis veniam velit eiusmod Lorem voluptate.\r\n",
+    "name": "Suspended pushup",
+    "about": "Trainers far and wide have touted the usefulness of suspension-training systems like the TRX for years, and the fitness population is starting to catch on. In a pushup, the instability of the handles leads to more muscle fiber activation, in turn leading to more strength and muscle development in less time than in other variations of the classic pushup, as well as long-term health for your shoulders.\r\n",
     "age": "21-38",
     "time": 33,
     "quantity": 0,
@@ -19,8 +19,8 @@
   },
   {
     "id": "63345d3a2d15e07ea81264a3",
-    "name": "Beatrice Walker",
-    "about": "Aliquip consequat elit eu ipsum cillum mollit sint magna esse ex aliqua. Cupidatat cupidatat ad officia nulla. Nisi officia minim ad do labore aliqua mollit voluptate nostrud enim. Duis ipsum do velit anim in labore ipsum ad officia nulla sint sint.\r\n",
+    "name": "Suspended inverted",
+    "about": "More often than not, a move done with both sides of the body involved will not expose weaknesses or imbalances. This variation of the row is an exception—it will make your shortcomings seem even more pronounced. But keep your chin up, dude: A suspension trainer will help correct those imbalances or weaknesses, leading to long-term joint health due to correct movement patterns.\r\n",
     "age": "21-38",
     "time": 23,
     "quantity": 0,
@@ -28,8 +28,8 @@
   },
   {
     "id": "63345d3a03653c3a06b7e966",
-    "name": "Carrie Caldwell",
-    "about": "Incididunt ex duis nostrud qui exercitation laborum aute velit sint reprehenderit mollit labore reprehenderit. Voluptate voluptate fugiat dolor aliqua minim eu quis fugiat officia. Et quis in sunt culpa esse exercitation reprehenderit sunt duis sit excepteur. Qui et magna incididunt duis sunt eu tempor sint deserunt anim voluptate velit aliqua officia. Nulla voluptate fugiat non deserunt veniam reprehenderit. Et tempor ullamco amet non aliqua reprehenderit esse qui qui nisi tempor veniam cupidatat.\r\n",
+    "name": "Kettlebell swing",
+    "about": "Often confused as a squat and front raise combo for the legs and shoulders, respectively, this move is actually an explosive hip hinge, great for the glutes and conditioning. When done properly, the hip-hinge movement combined with the cardio aspect (due to the explosiveness of the movement) will help create a strong, ripped physique any guy would be jealous of.\r\n",
     "age": "26-45",
     "time": 39,
     "quantity": 0,
@@ -37,17 +37,17 @@
   },
   {
     "id": "63345d3a190224ab3aaf18d5",
-    "name": "Annie Spears",
-    "about": "Adipisicing laborum mollit enim quis irure do deserunt laboris sit. Mollit elit consequat adipisicing reprehenderit ipsum dolore cupidatat nisi ad. Elit quis laboris id incididunt qui. Culpa aliqua in occaecat mollit ullamco adipisicing fugiat anim.\r\n",
+    "name": "Pullup",
+    "about": "Nothing quite says “I’m big” like a wide set of shoulders; a wide back doesn’t hurt either. The best move for developing those big, fan-shaped muscles (latissimus dorsi, aka, the lats) that make your shoulders look wide is the traditional pullup. It’s a big, multijoint move, which leads to testosterone release, meaning strength and overall muscle development will be enhanced.\r\n",
     "age": "22-42",
     "time": 21,
     "quantity": 0,
-    "img": "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+    "img": "https://images.unsplash.com/photo-1605296867424-35fc25c9212a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
   },
   {
     "id": "63345d3a959a5eeef837c7bf",
-    "name": "Wright Barber",
-    "about": "Enim voluptate esse occaecat exercitation sunt ut ea eiusmod veniam non. Consectetur ex ad aliquip quis sint incididunt officia aliquip. Excepteur proident ut eu dolor aute sint exercitation. Pariatur ad culpa irure elit dolore. Ullamco aliquip aliqua ex aliqua ut consequat culpa ad sunt enim sit tempor. Ipsum sit veniam pariatur est consequat aliquip nulla aute magna sit fugiat.\r\n",
+    "name": "Bench Press",
+    "about": "Every gym-goer in the world has been asked “Whaddya bench?” at least once. This move is responsible for developing powerful, well-defined pecs, shoulders, and triceps, which lead to a more commanding presence, with or without a shirt on. Combine that with the muscle-building effects of the testosterone this move releases and all you have left to do is watch your “little black book” fill up.\r\n",
     "age": "22-39",
     "time": 26,
     "quantity": 0,
