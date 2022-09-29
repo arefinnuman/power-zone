@@ -1,5 +1,6 @@
 import React from 'react';
 
+//  Single card component
 const Exercise = ({ exercise, handleAddToCart }) => {
     const { name, img, about, age, time, } = exercise;
     return (
