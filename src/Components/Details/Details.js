@@ -1,23 +1,28 @@
-import React from "react";
-import Swal from 'sweetalert2';
+import React, { useEffect, useState } from "react";
+import toast, { Toaster } from 'react-hot-toast';
 import img from "../Utilities/Images/image1.png";
 
-const Details = ({ cart, breakTime, handleInput }) => {
-    const sweetAlert = () => {
-        Swal.fire({
-            title: 'Good job!',
-            text: 'You clicked the button!',
-            icon: 'success',
-            confirmButtonText: 'Cool'
-          })
-    }
+const success = () => toast.success("Activity Completed");
+
+const Details = ({ cart }) => {
   let totalExercises = 0;
-  let quantity = 0;
   for (const item of cart) {
-    totalExercises = totalExercises + item.time * item.quantity;
-    quantity = quantity + item.quantity;
+    totalExercises = totalExercises + item.time;
   }
-  let totalBreakTime = breakTime;
+  const [exerciseBreakTime, setExerciseBreakTime] = useState(0);
+
+  const breakTime = (time) => {
+    setExerciseBreakTime(time);
+    localStorage.setItem("break-time", JSON.stringify(time));
+  };
+
+  useEffect(() => {
+    const storedBreakTime = localStorage.getItem("break-time");
+    const parsedBreakTime = JSON.parse(storedBreakTime);
+    if (storedBreakTime) {
+      setExerciseBreakTime(parsedBreakTime);
+    }
+  }, []);
 
   return (
     <div>
@@ -31,46 +36,40 @@ const Details = ({ cart, breakTime, handleInput }) => {
         </div>
         <div>
           <h5>Add a Break</h5>
-          <div className="">
+          <div>
             <button
-              onClick={handleInput}
+              onClick={() => breakTime(10)}
               className="m-2 btn btn-light btn btn-outline-primary rounded"
-              value={10}
             >
               10s
             </button>
             <button
-              onClick={handleInput}
+              onClick={() => breakTime(20)}
               className="m-2 btn btn-light btn btn-outline-primary rounded"
-              value={20}
             >
               20s
             </button>
             <button
-              onClick={handleInput}
+              onClick={() => breakTime(30)}
               className="m-2 btn btn-light btn btn-outline-primary rounded"
-              value={30}
             >
               30s
             </button>
             <button
-              onClick={handleInput}
+              onClick={() => breakTime(40)}
               className="m-2 btn btn-light btn btn-outline-primary rounded"
-              value={40}
             >
               40s
             </button>
             <button
-              onClick={handleInput}
+              onClick={() => breakTime(50)}
               className="m-2 btn btn-light btn btn-outline-primary rounded"
-              value={50}
             >
               50s
             </button>
             <button
-              onClick={handleInput}
+              onClick={() => breakTime(60)}
               className="m-2 btn btn-light btn btn-outline-primary rounded"
-              value={60}
             >
               60s
             </button>
@@ -88,17 +87,17 @@ const Details = ({ cart, breakTime, handleInput }) => {
           <div className="shadow p-2 mb-5 bg-body rounded">
             <p>
               <b>Break Time: </b>
-              {totalBreakTime}s
+              {exerciseBreakTime}s
             </p>
           </div>
         </div>
-        <div class="d-grid">
-          <button onClick={sweetAlert} class="btn btn-primary" type="button">
-            Button
+        <div className="d-grid">
+          <button onClick={success} className="btn btn-primary" type="button">
+            Activity Completed
           </button>
-          
         </div>
       </div>
+      <Toaster></Toaster>
     </div>
   );
 };
