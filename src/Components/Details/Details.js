@@ -34,7 +34,7 @@ const Details = ({ cart }) => {
     <div>
       <div className="mt-5 p-2 ">
         {/* details Section */}
-        <div className="mb-3 d-flex justify-content-center align-items-center">
+        <div className="my-3 d-flex justify-content-center align-items-center">
           <img className="rounded-circle " src={img} alt="" />
           <div className="ms-2">
             <h6>Arefin Numan</h6>

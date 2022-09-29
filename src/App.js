@@ -1,11 +1,11 @@
-import './App.css';
-import Exercises from './Components/Exercises/Exercises';
+import "./App.css";
+import Exercises from "./Components/Exercises/Exercises";
 
 function App() {
   return (
-    <div className='container'>
-      <Exercises></Exercises> 
-      </div>
+    <div className="container">
+      <Exercises></Exercises>
+    </div>
   );
 }
 
